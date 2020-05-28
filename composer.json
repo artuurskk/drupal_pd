@@ -19,6 +19,7 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/twitter_block": "3.x",
         "drush/drush": "^10.2"
     },
     "conflict": {
