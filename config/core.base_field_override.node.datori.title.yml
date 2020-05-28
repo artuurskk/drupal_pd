@@ -1,0 +1,18 @@
+uuid: 61cb853d-36b0-49f4-aecd-8f2d051375f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.datori
+id: node.datori.title
+field_name: title
+entity_type: node
+bundle: datori
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

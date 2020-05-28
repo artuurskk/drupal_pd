@@ -1,0 +1,51 @@
+uuid: 6650f735-2744-435a-83dd-c7214163c4fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.datori.body
+    - field.field.node.datori.field_cena
+    - field.field.node.datori.field_kategorija
+    - field.field.node.datori.field_lidzigi_produkti
+    - field.field.node.datori.field_pieejamiba_noliktava
+    - field.field.node.datori.field_produkta_attels
+    - field.field.node.datori.field_razotaja_nosaukums
+    - node.type.datori
+  module:
+    - text
+    - user
+id: node.datori.teaser
+targetEntityType: node
+bundle: datori
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_pieejamiba_noliktava:
+    type: boolean
+    weight: 2
+    region: content
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_cena: true
+  field_kategorija: true
+  field_lidzigi_produkti: true
+  field_produkta_attels: true
+  field_razotaja_nosaukums: true

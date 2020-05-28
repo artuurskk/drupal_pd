@@ -1,0 +1,18 @@
+uuid: b3f4a610-fd6e-445b-988a-ed050d5c3b82
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Produkts
+type: datori
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

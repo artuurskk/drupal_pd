@@ -1,0 +1,23 @@
+uuid: bbc2d132-4ff1-4812-b280-daa6c5ae1ed7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cena
+    - node.type.datori
+id: node.datori.field_cena
+field_name: field_cena
+entity_type: node
+bundle: datori
+label: Cena
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,89 @@
+uuid: c8270dd2-68e7-4418-ba7f-fad2385d01f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.datori.body
+    - field.field.node.datori.field_cena
+    - field.field.node.datori.field_kategorija
+    - field.field.node.datori.field_lidzigi_produkti
+    - field.field.node.datori.field_pieejamiba_noliktava
+    - field.field.node.datori.field_produkta_attels
+    - field.field.node.datori.field_razotaja_nosaukums
+    - node.type.datori
+  module:
+    - image
+    - text
+    - user
+id: node.datori.default
+targetEntityType: node
+bundle: datori
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_cena:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_kategorija:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_lidzigi_produkti:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_pieejamiba_noliktava:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_produkta_attels:
+    weight: 2
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_razotaja_nosaukums:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

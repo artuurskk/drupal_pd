@@ -1,0 +1,27 @@
+uuid: 324f69b9-fa6b-4587-814e-64aede133709
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lidzigi_produkti
+    - node.type.datori
+id: node.datori.field_lidzigi_produkti
+field_name: field_lidzigi_produkti
+entity_type: node
+bundle: datori
+label: 'Līdzīgi produkti'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      datori: datori
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 736c4238-7a11-4384-b2d8-5b59d5c6cad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pieejamiba_noliktava
+    - node.type.datori
+id: node.datori.field_pieejamiba_noliktava
+field_name: field_pieejamiba_noliktava
+entity_type: node
+bundle: datori
+label: 'Pieejamība noliktavā'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
